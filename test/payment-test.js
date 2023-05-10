@@ -1,11 +1,15 @@
 const {it, describe} = require("node:test");
 const {strictEqual, deepStrictEqual } = require("assert");
-const {users} = require("../src/payment.js");
+const {createUsers} = require("../src/payment.js");
 
-it("user bittu created.", function() { 
-  deepStrictEqual(users("bittu"),{
-    details: "bittu",
-    balance: 100
-  })
 
+describe("users() :", function() { 
+  const bittu = createUsers('bittu');
+  it("checking details", function() { 
+    deepStrictEqual(bittu.details(),"bittu");
+  });
+
+  it("checking balance", function() { 
+    deepStrictEqual(bittu.balance(), 0);
+  });
 });
