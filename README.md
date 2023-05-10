@@ -22,7 +22,7 @@ Q3). What is basic functions?
 
 Q4). where the data is sotred.
 
-  - Firt in the text file.
+  - First in the text file.
   - Then I upgrade to some where else.
 
 Q5). How the data structure look like?
